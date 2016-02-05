@@ -1,5 +1,5 @@
 # OpenFDA
-Created a project from scratch to enable Json Parsing of openFDA drug/event pairs data sets using Spring + MySQL.
+Created a project from scratch to enable Json Parsing of Freebase and wkipedia extraction data sets using Spring and HttpClient
 
 
 To Execute:
@@ -8,6 +8,7 @@ To Execute:
     a) mvn clean generate-resources
     b) mvn clean install
     c) mvn exec:java
-3) Execute the jar file
-    a) Execute rundpareports.sh
-        (Change the source directory for json files)
+3) Execute the jar file with three folder paths
+    a) Source folder for reading the freebase triples
+     b) destination folder for freebase data(this is same for wikipedia source folder)
+     c) destination folder for wikipedia data
