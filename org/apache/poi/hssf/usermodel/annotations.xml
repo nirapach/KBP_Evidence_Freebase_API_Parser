@@ -1,0 +1,5 @@
+<root>
+  <item name='org.apache.poi.hssf.usermodel.HSSFRow org.apache.poi.hssf.usermodel.HSSFCell createCell(short)'>
+    <annotation name='java.lang.annotation.Deprecated'/>
+  </item>
+</root>
