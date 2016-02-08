@@ -27,6 +27,7 @@ public class StatsInformationCaller {
 
     @Autowired
     FreebaseStats freebaseStats;
+    @Autowired
     Wikipedia_Text_Stats wikipedia_text_stats;
 
     public void getAllStats(String mid_files_address, String result_file_address, String wiki_resultfiles_address) throws IOException, URISyntaxException, PropertyVetoException, SQLException {
@@ -38,12 +39,12 @@ public class StatsInformationCaller {
 
         //Calling the method to get ad group action stats
 
-        boolean finishedFbStats = freebaseStats.getOverAllFBstats(mid_files_address, result_file_address);
+/*        boolean finishedFbStats = freebaseStats.getOverAllFBstats(mid_files_address, result_file_address);
 
         if (finishedFbStats) {
             System.out.println("Freebase API MID extraction Completed Successfully");
 
-        }
+        }*/
 
         boolean finishedWikiStats = wikipedia_text_stats.getWikitext(result_file_address, wiki_resultfiles_address);
 
